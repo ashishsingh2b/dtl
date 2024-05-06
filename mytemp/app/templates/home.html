@@ -8,6 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My name is {{nm}} and my age is {{a}} and my mobile no is {{mo}}</h1>
+<ol>
+   {% for nm in nam  %}
+   <li>{{nm}}</li> <br>
+   {% empty %}
+   <h3>Students not avalable</h3>
+   {% endfor %}
+</ol>
 </body>
 </html>
